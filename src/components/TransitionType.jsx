@@ -11,7 +11,7 @@ const TransitionType = () => {
           duration: 2,
         }}
       >
-        <h1>Learning Animation</h1>
+        <h1 className="font-bold text-red-600">Learning Animation</h1>
         <p>
           We love Animation. We are Enjoying it a lot. Framer Motion is great.
         </p>
@@ -26,7 +26,7 @@ const TransitionType = () => {
           duration: 2,
         }}
       >
-        <h1>Learning Animation 2</h1>
+        <h1 className="font-bold text-green-600">Learning Animation 2</h1>
         <p>
           We love Animation. We are Enjoying it a lot. Framer Motion is great.
         </p>
@@ -42,7 +42,7 @@ const TransitionType = () => {
           duration: 2,
         }}
       >
-        <h1>Learning Animation 3</h1>
+        <h1 className="font-bold text-blue-600">Learning Animation 3</h1>
         <p>
           We love Animation. We are Enjoying it a lot. Framer Motion is great.
         </p>

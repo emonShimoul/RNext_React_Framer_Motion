@@ -1,0 +1,41 @@
+import { motion } from "motion/react";
+
+const Box = ({ text }) => {
+  return (
+    <motion.div
+      className="w-32 h-32 border rounded-sm bg-pink-300 text-black m-4 text-center"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+        transition: {
+          duration: 1,
+        },
+      }}
+      viewPort={{ once: false }}
+    >
+      {text}
+    </motion.div>
+  );
+};
+
+const ScrollReveal = () => {
+  const greetings = [
+    "Hello",
+    "Hola",
+    "Welcome",
+    "Assalam",
+    "Come In",
+    "Let's Go",
+    "Howdy",
+  ];
+  return (
+    <div>
+      {greetings.map((greeting, index) => (
+        <Box key={index} text={greeting} />
+      ))}
+    </div>
+  );
+};
+
+export default ScrollReveal;
